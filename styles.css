@@ -51,3 +51,14 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
+.billede {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+.image-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+}
