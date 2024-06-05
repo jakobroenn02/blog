@@ -1,4 +1,7 @@
 body, html {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -7,7 +10,9 @@ body, html {
     background-color: #000;
     position: relative;
 }
-
+#content{
+    flex: 1;
+}
 canvas {
     display: block;
     position: absolute;
@@ -15,15 +20,15 @@ canvas {
     left: 0;
 }
 #overlay {
-    background-color: #000;
-    border: #fff 2px solid;
+    background-color: #212020;
+    border: #403e3e 2px solid;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
     height: 300;
-    width: 400px;
+    width: 300px;
     z-index: 100;
 }
 #overlay h2 {
@@ -40,4 +45,14 @@ canvas {
     color: #000;
     border: none;
     cursor: pointer;
+}
+
+footer {
+    height: 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    z-index: 1;
 }
