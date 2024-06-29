@@ -1,9 +1,14 @@
-express = require('express');
-app = express();
-app.use(express.static(__dirname + '/public'));
-app.listen(3000);
-console.log('Server is running on port 3000');
+const express = require('express');
+const app = express();
 
-//serve the index.html file and script.js file and style.css file
+const router = require('./routes.js');
+
+
+app.use(express.static(__dirname + '/public'));
+app.use('/', router);
+app.listen(8080);
+console.log('Server is running on port 8080');
+
+
 
 
